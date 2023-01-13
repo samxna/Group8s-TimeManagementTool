@@ -1,0 +1,215 @@
+/* https://www.w3schools.com/tags/tag_button.asp this is for the button */
+/* https://www.w3schools.com/howto/howto_css_dropdown.asp this is for the hoverable dropdown*/
+/* https://www.w3schools.com/howto/howto_js_sidenav.asp side nav bar */
+body{
+  background-color: #3C0603;
+  color: white;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+table, th, td {
+ border-collapse: collapse;
+ width:600px;
+}
+.title{
+  margin-top: -20px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  font-size: 40px;
+  align-items: center;
+}
+
+/* This is to create the coloured underlining under each of our names*/
+
+#victor {
+  text-decoration: underline;
+  text-decoration-color: #fc8e12;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2%;
+}
+
+#ethan {
+  text-decoration: underline;
+  text-decoration-color: #fdf250;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2%;
+}
+
+#samina {
+  text-decoration: underline;
+  text-decoration-color: #eb6e9e;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2%;
+}
+
+#samiul {
+  text-decoration: underline;
+  text-decoration-color: #a81d1d;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2%;
+}
+
+#abdi {
+  text-decoration: underline;
+  text-decoration-color: #448af3;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2%;
+}
+
+.sub{
+  text-align: center;
+  color: white;
+  margin-top: -15px;
+}
+.left{
+  height: 100vh;
+  width: 50%;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+.right{
+  height: 100vh;
+  width: 50%;
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+.chart1{
+  margin-top: 50px;
+  margin-left: 60px;
+  width: 550px;
+  height: 550px;
+}
+.chart2{
+  margin-top: 50px;
+  float: left;
+  width: 550px;
+  height: 550px;
+  margin-left: 40px;
+}
+
+.saminachart2{
+  margin-top: 50px;
+  float: left;
+  width: 630px;
+  height: 550px;
+  margin-left: 40px;
+}
+
+.span {
+  font-size: 35px;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-top: 15px;
+  font-weight: 50;
+}
+.span:hover {
+  opacity: 0.2;
+  transition: ease 0.12s;
+}
+.options {
+  margin-left: 10px;
+  color: white;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+}
+.sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #581414;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #a09e9e;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.RedBlock {
+  background: #3c0603;
+  padding: 10px;
+  color: white;
+  font-weight: 10;
+}
+.dropbtn5 {
+  background-color: #3c0603;
+  color: white;
+  font-size: 25px;
+  border: none;
+  font-weight: 10;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.dropbtn5:hover {
+  color: rgb(145, 145, 145);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #581414;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #3c0603;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/timetable-styling.css" type="text/css">
+    <title>My Schedule</title>
+  </head>
+  <body>
+    <!-- https://www.w3schools.com/howto/howto_css_dropdown.asp this is for the hoverable dropdown -->
+    <!-- https://www.w3schools.com/tags/tag_button.asp this is for the button -->
+    <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp side nav bar -->
+    <div id="mySidenav" class="sidenav">
+      <a class="options" href="/index.html">Home</a>
+      <br><br>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="RedBlock"><a href="../Stopwatch/stopwatch.html">Time Myself</a></div>
+      <br>
+      <div class="RedBlock">
+        <div class="dropdown">
+          <button class="dropbtn5">The Team's Dashboard</button>
+          <div class="dropdown-content">
+            <a href="../team dashbaord/TeamsDash.html">The Team's Dashboard</a>
+            <a href="../team dashbaord/victordash.html">Victor</a>
+            <a href="../team dashbaord/ethandash.html">Ethan</a>
+            <a href="../team dashbaord/samina.html">Samina</a>
+            <a href="../team dashbaord/samiul.html">Samiul</a>
+            <a href="../team dashbaord/abdi.html">Abdi</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="RedBlock"><a href="../Dashboard-Day1/dashboard.html">Create My Dashboard</a></div>
+    </div>
+
+    <span class="span" onclick="openNav()">&#9776;</span>
+
+    <h2 class="MyTimetable">My Schedule for the Week</h2>
+
+    <table id="timetable">
+      <tr>
+        <th class="data">Time</th>
+        <th class="data">Monday</th>
+        <th class="data">Tuesday</th>
+        <th class="data">Wednesday</th>
+        <th class="data">Thursday</th>
+        <th class="data">Friday</th>
+      </tr>
+      <tr>
+        <td class="data">9:00 AM</td>
+        <td id="monday-9"></td>
+        <td id="tuesday-9"></td>
+        <td id="wednesday-9"></td>
+        <td id="thursday-9"></td>
+        <td id="friday-9"></td>
+      </tr>
+      <tr>
+        <td class="data">10:00 AM</td>
+        <td id="monday-10"></td>
+        <td id="tuesday-10"></td>
+        <td id="wednesday-10"></td>
+        <td id="thursday-10"></td>
+        <td id="friday-10"></td>
+      </tr>
+      <tr>
+        <td class="data">11:00 AM</td>
+        <td id="monday-11"></td>
+        <td id="tuesday-11"></td>
+        <td id="wednesday-11"></td>
+        <td id="thursday-11"></td>
+        <td id="friday-11"></td>
+      </tr>
+      <tr>
+        <td class="data">12:00 PM</td>
+        <td id="monday-12"></td>
+        <td id="tuesday-12"></td>
+        <td id="wednesday-12"></td>
+        <td id="thursday-12"></td>
+        <td id="friday-12"></td>
+      </tr>
+      <tr>
+        <td class="data">1:00 PM</td>
+        <td id="monday-1"></td>
+        <td id="tuesday-1"></td>
+        <td id="wednesday-1"></td>
+        <td id="thursday-1"></td>
+        <td id="friday-1"></td>
+      </tr>
+      <tr>
+        <td class="data">2:00 PM</td>
+        <td id="monday-2"></td>
+        <td id="tuesday-2"></td>
+        <td id="wednesday-2"></td>
+        <td id="thursday-2"></td>
+        <td id="friday-2"></td>
+      </tr>
+      <tr>
+        <td class="data">3:00 PM</td>
+        <td id="monday-3"></td>
+        <td id="tuesday-3"></td>
+        <td id="wednesday-3"></td>
+        <td id="thursday-3"></td>
+        <td id="friday-3"></td>
+      </tr>
+      <tr>
+        <td class="data">4:00 PM</td>
+        <td id="monday-4"></td>
+        <td id="tuesday-4"></td>
+        <td id="wednesday-4"></td>
+        <td id="thursday-4"></td>
+        <td id="friday-4"></td>
+      </tr>
+      <tr>
+        <td class="data">5:00 PM</td>
+        <td id="monday-5"></td>
+        <td id="tuesday-5"></td>
+        <td id="wednesday-5"></td>
+        <td id="thursday-5"></td>
+        <td id="friday-5"></td>
+      </tr>
+      <tr>
+        <td class="data">6:00 PM</td>
+        <td id="monday-6"></td>
+        <td id="tuesday-6"></td>
+        <td id="wednesday-6"></td>
+        <td id="thursday-6"></td>
+        <td id="friday-6"></td>
+      </tr>
+      <tr>
+        <td class="data">7:00 PM</td>
+        <td id="monday-7"></td>
+        <td id="tuesday-7"></td>
+        <td id="wednesday-7"></td>
+        <td id="thursday-7"></td>
+        <td id="friday-7"></td>
+      </tr>
+      <tr>
+        <td class="data">8:00 PM</td>
+        <td id="monday-8"></td>
+        <td id="tuesday-8"></td>
+        <td id="wednesday-8"></td>
+        <td id="thursday-8"></td>
+        <td id="friday-8"></td>
+      </tr>
+
+
+      <div class="InputBox">
+        <form id="adding-activity">
+          <div class="TimeDay">
+            <h3>Time and Day:</h3>
+
+            <select name="time">
+              <option value="9:00 AM">9:00 AM</option>
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="1:00 PM">1:00 PM</option>
+              <option value="2:00 PM">2:00 PM</option>
+              <option value="3:00 PM">3:00 PM</option>
+              <option value="4:00 PM">4:00 PM</option>
+              <option value="5:00 PM">5:00 PM</option>
+              <option value="6:00 PM">6:00 PM</option>
+              <option value="7:00 PM">7:00 PM</option>
+              <option value="8:00 PM">8:00 PM</option>
+            </select>
+
+            <select name="day">
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+            </select><br>
+        </div>
+        <div class="Activity">
+          <h3>Activity:</h3>
+          <input type="text" name="activity"><br> <br>
+          <button class="submit" type="submit">Add activity</button>
+        </div>
+
+        </form>
+
+        <script src="./java/main.js"></script>
+      </div>
+
+
+
+
+
+  </body>
+</html>

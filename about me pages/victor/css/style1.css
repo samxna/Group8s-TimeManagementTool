@@ -1,0 +1,141 @@
+body {
+  background-color: wheat;
+  margin: 0px;
+}
+table, th, td {
+  padding: 0px;
+  width:100vh;
+  border-collapse: collapse;
+}
+* {box-sizing: border-box;}
+.mySlides {/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto a auto slideshow*/
+  display: none;
+}
+.slide-bg{/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto a auto slideshow*/
+  background-image: url(../image/pic1.png);
+  width: 1470px;
+  margin-top: 0px;
+}
+/* Slideshow container *//*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto a auto slideshow*/
+.slideshow-container {
+  width: 1450px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* The dots/bullets/indicators *//*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto a auto slideshow*/
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto a auto slideshow*/
+  background-color: #717171;
+}
+
+/* Fading animation *//*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto a auto slideshow*/
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto a auto slideshow*/
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.text{
+  background-color: white;
+}
+.text1{
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+}
+.text2{
+  text-align: center;
+  padding-left:170px;
+  padding-right:170px;
+  padding-bottom:20px;
+  font-size: 1.5em;
+}
+.intro{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 1470px;
+  background-color: RGBA(255,255,255, 1);
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 2.5em;
+}
+.First{
+  text-align: center;
+  display: inline-block;
+  width: 1430px;
+  background-color: RGBA(235, 77, 77, 0.9);
+  height: 100vh;
+  padding: 5%;
+  font-size: 2.3em;
+}
+.Second{
+  text-align: center;
+  display: inline-block;
+  width: 1430px;
+  background-color: RGBA(204,52,4, 0.9);
+  height: 100vh;
+  padding: 5%;
+  font-size: 2.3em;
+}
+/*https://www.w3schools.com/Css/css_navbar.asp this is for the nav bar */
+.navbar {
+  z-index: 3;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/*https://www.w3schools.com/Css/css_navbar.asp this is for the nav bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/*https://www.w3schools.com/Css/css_navbar.asp this is for the nav bar */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto a auto slideshow*/
+@media all screen and (max-width: 600px) {
+  .slideshow-container{
+    width: 394px;
+    font-size: 5px;
+  }
+  /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto a auto slideshow*/
+  .slide-bg{
+    width: 414px;
+    font-size: 5px;
+  }
+  .First{
+    width: 374px;
+    font-size: 5px;
+  }
+  .second{
+    width: 374px;
+    font-size: 5px;
+  }
+  table, th, td {
+    width: 414px;
+    font-size: 5px;
+  }
+}

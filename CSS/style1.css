@@ -1,0 +1,321 @@
+/* https://www.w3schools.com/tags/tag_button.asp this is for the button */
+/* https://www.w3schools.com/howto/howto_css_dropdown.asp this is for the hoverable dropdown*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#cover_section {
+  background-color: #3c0603;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+}
+
+#cover_section1 {
+  background-color: #3c0603;
+  height: 110vh;
+  width: 100%;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+}
+
+.leftSide {
+  height: 100vh;
+  width: 50%;
+  float: left;
+}
+
+.leftSide img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+}
+
+.text h1 {
+  color: white;
+  font-size: 60px;
+  padding-top: 10px;
+  text-align: center;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 150;
+  letter-spacing: 0.1em;
+  margin: 40px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.ourschools {
+  color: white;
+}
+
+.ourschools:hover {
+  text-underline-offset: 15px;
+  text-decoration-thickness: 2%;
+}
+
+.text h3 {
+  color: white;
+  font-size: 40px;
+  padding-top: -10px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 150;
+  letter-spacing: 0.1em;
+}
+
+.text h2 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  border: solid 1px white;
+  padding: 15px;
+  margin: 45px;
+  cursor: pointer;
+}
+
+.text h2:hover {
+  background-color: #3c0603;
+}
+
+.rightSide {
+  height: 100vh;
+  width: 50%;
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+.rightSide {
+  height: 8em;
+  position: relative;
+}
+
+.rightSide h2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+  padding: 0;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+  margin-left: 45px;
+  margin-top: 30px;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  border: solid 1px white;
+  cursor: pointer;
+  width: 600px;
+}
+
+.dropbtn2 {
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+  margin-left: 110px;
+  margin-top: 140px;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 70px;
+  border: solid 1px white;
+  cursor: pointer;
+  width: 500px;
+  height: 250px;
+}
+
+.dropbtn2:hover {
+  background: rgba(87, 53, 53, 0.4);
+  transition: ease 0.2s;
+}
+
+.dropbtn3 {
+  background-color: transparent;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  width: 190px;
+  border: none;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3%;
+}
+
+.dropbtn3:hover {
+  transition: ease 0.2s;
+}
+
+.dropbtn3abdi {
+  background-color: transparent;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  width: 190px;
+  border: none;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3%;
+  padding-right: 50px;
+}
+
+.dropdown { /* https://www.w3schools.com/howto/howto_css_dropdown.asp */
+  position: relative;
+  display: inline-block;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+}
+
+.dropdown:hover { /* https://www.w3schools.com/howto/howto_css_dropdown.asp */
+  transition: ease 0.2s;
+}
+
+.dropdown-content { /* https://www.w3schools.com/howto/howto_css_dropdown.asp */
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-left: 45px;
+  width: 600px;
+}
+
+.dropdown-content:hover { /* https://www.w3schools.com/howto/howto_css_dropdown.asp */
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1%;
+  transition: ease 0.2s;
+}
+
+.dropdown-content a { /* https://www.w3schools.com/howto/howto_css_dropdown.asp */
+  color: #3c0603;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 33%;
+  border-right: soild 2px #3c0603;
+  text-align: center;
+}
+.dropdown-content2 { /* https://www.w3schools.com/howto/howto_css_dropdown.asp */
+  display: none;
+  position: absolute;
+  background-color: #3c0603;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 190px;
+  transition: ease 0.2s;
+}
+
+.dropdown-content2 a { /* https://www.w3schools.com/howto/howto_css_dropdown.asp */
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 158px;
+  border-right: soild 2px #3c0603;
+  text-align: center;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1%;
+}
+
+.dropdown-content a:hover { /* https://www.w3schools.com/howto/howto_css_dropdown.asp */
+  background-color: #ddd;
+  transition: ease 0.2s;
+}
+
+.dropdown:hover .dropdown-content { /* https://www.w3schools.com/howto/howto_css_dropdown.asp */
+  display: flex;
+}
+
+.dropdown:hover .dropbtn { /* https://www.w3schools.com/howto/howto_css_dropdown.asp */
+  background-color: rgba(60, 6, 3, 0.5);
+}
+
+.dropdown:hover .dropdown-content2 { /* https://www.w3schools.com/howto/howto_css_dropdown.asp */
+  display: block;
+}
+
+.dropdown:hover .dropbtn3 { /* https://www.w3schools.com/howto/howto_css_dropdown.asp */
+  background-color: rgba(60, 6, 3, 0.5);
+}
+
+a:link {
+  text-decoration: none;
+  color: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.colour {
+  color: white;
+  font-size: 25px;
+}
+
+.colour:hover {
+  text-underline-offset: 12px;
+  text-decoration-thickness: 3%;
+}
+
+.pin {
+  width: 35px;
+  height: 50px;
+  padding-top: 15px;
+  padding-left: 50px;
+  position: relative;
+}
+
+.abdipin {
+  width: 35px;
+  height: 50px;
+  padding-top: 15px;
+  padding-left: 70px;
+  position: relative;
+}
+
+p1 {
+  color: white;
+  font-size: 40px;
+}
+
+hr {
+  height: 0;
+  width: 0;
+}

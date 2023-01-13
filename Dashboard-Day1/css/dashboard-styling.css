@@ -1,0 +1,216 @@
+/* https://www.w3schools.com/tags/tag_button.asp this is for the button */
+/* https://www.w3schools.com/howto/howto_css_dropdown.asp this is for the hoverable dropdown*/
+/* https://www.w3schools.com/howto/howto_js_sidenav.asp side nav bar */
+body {
+  background-color: #3c0603;
+  color: white;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+h1 {
+  text-align: center;
+  text-decoration-color: #581414;
+  text-decoration-line: underline;
+  letter-spacing: 0.1cm;
+}
+
+h3 {
+  text-align: center;
+  letter-spacing: 0.14em;
+  font-weight: lighter;
+}
+
+label {
+  display: inline-block;
+  width: 15em;
+}
+
+.dashtitle {
+  margin-top: -20px;
+  margin-bottom: 50px;
+  text-align: center;
+  text-decoration-color: #581414;
+  text-decoration-line: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 3%;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  font-size: 40px;
+  align-items: center;
+}
+
+input {
+  background-color: transparent;
+  border: 0.5px solid white;
+  padding: 5px;
+  font-size: 23px;
+  font-weight: 100;
+}
+
+input[type=number] {
+  color: white;
+}
+
+.forms {
+  padding: 25px;
+  margin-left: 2%;
+}
+
+.lables {
+  text-align: left;
+  padding-bottom: 50px;
+  font-size: 30px;
+}
+
+.trans1 {
+  border: 0.1px solid white;
+  background-color: transparent;
+  border-radius: 3px;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 10px;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  letter-spacing: 2.5px;
+  color: white;
+}
+
+.trans1:hover {
+  opacity: 0.7;
+}
+
+/* Need the form to be aligned to center not label, label bit required to have it lined up.  */
+.forms {
+  text-align: center;
+}
+
+.chart1 {
+  float: left;
+  display: flex;
+}
+.chart2 {
+  float: right;
+  display: inline;
+}
+.span {
+  font-size: 35px;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-top: 15px;
+  font-weight: 50;
+}
+.span:hover {
+  opacity: 0.2;
+  transition: ease 0.12s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #581414;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #a09e9e;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.options {
+  margin-left: 10px;
+  color: white;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.RedBlock {
+  background: #3c0603;
+  padding: 10px;
+  color: white;
+  font-weight: 10;
+}
+.dropbtn5 {
+  background-color: #3c0603;
+  color: white;
+  font-size: 25px;
+  border: none;
+  font-weight: 10;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.dropbtn5:hover {
+  color: rgb(145, 145, 145);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #581414;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #3c0603;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+#message {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}

@@ -1,0 +1,185 @@
+/*Followed a YouTube tutorial for the colour scheme of my page. https://www.youtube.com/watch?v=h3E68tTyE34&t=16s*/
+
+:root{
+    --color-primary: #0073ff;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+
+
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://wallpaper.dog/large/10741748.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    color: var(--color-white);
+    background-repeat: no-repeat;
+    
+    /* Change fixed width to percentage-based width */
+    width: 80%;
+    height: 100vh;
+  }
+
+.site-name{
+    color:var(--color-primary);
+    font-size: 25px;
+}
+
+.site-name span{
+    color:var(--color-white);
+
+}
+
+.menu-header{
+    background-color: var(--color-black);
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+
+    position: relative;
+
+}
+
+.menu-header ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu-header ul li{
+    padding: 10px 30px;
+
+    position: relative;
+}
+
+.menu-header ul li a {
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+
+    transition:  all 0.3s;
+
+
+}
+
+.menu-header ul li a:hover{
+    color: var(--color-primary);
+
+}
+
+
+
+
+.right-side{
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+
+}
+
+
+
+
+
+
+p{
+    color: #e9e9e9;
+    font-size: 14px;
+    font-family: sans-serif;
+    
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1{
+    color: #e9e9e9;
+    font-size: 20px;
+}
+
+p{
+    word-break: normal;
+}
+
+p{
+    white-space: pre-wrap;
+}
+
+p {
+    /*This allows my paragraphs to be displayed on different web browsers and have the same result.*/
+    -webkit-word-wrap: break-word;
+    -moz-word-wrap: break-word;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+h1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p{
+    letter-spacing: 0.05em;
+    
+}
+
+
+
+.dropdown-menu-2{
+    display: none;
+}
+
+.menu-header ul li:hover .dropdown-menu-2 {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+}
+
+  .menu-header ul li:hover .dropdown-menu-2 ul {
+    display: block;
+    margin: 10px;
+}
+
+
+.menu-header ul li:hover .dropdown-menu-2 ul li {
+    width: 150px;
+    padding: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+

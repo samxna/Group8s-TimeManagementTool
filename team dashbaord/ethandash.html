@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style2.css">
+    <title>Ethan's Dashboard</title>
+  </head>
+  <body>
+    <!-- https://www.w3schools.com/howto/howto_css_dropdown.asp this is for the hoverable dropdown -->
+    <!-- https://www.w3schools.com/tags/tag_button.asp this is for the button -->
+    <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp side nav bar -->
+    <div id="mySidenav" class="sidenav">
+      <a class="options" href="/index.html">Home</a>
+      <br><br>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="RedBlock"><a href="../time managment/timetable.html">Time Managment Tool</a></div>
+      <br><br>
+      <div class="RedBlock"><a href="../Stopwatch/stopwatch.html">Timer</a></div>
+      <br>
+      <div class="RedBlock">
+        <div class="dropdown">
+          <button class="dropbtn5">The Team's Dashboard</button>
+          <div class="dropdown-content">
+            <a href="../team dashbaord/TeamsDash.html">The Team's Dashboard</a>
+            <a href="../team dashbaord/victordash.html">Victor</a>
+            <a href="../team dashbaord/samina.html">Samina</a>
+            <a href="../team dashbaord/samiul.html">Samiul</a>
+            <a href="../team dashbaord/abdi.html">Abdi</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="RedBlock"><a href="../Dashboard-Day1/dashboard.html">Create My Dashboard</a></div>
+    </div>
+
+    <span class="span" onclick="openNav()">&#9776;</span>
+
+    <h1 id="ethan" class="title">Ethan's Dashboard</h1>
+    <p class="sub">Average time spent on each activity within a week</p>
+    <div class="left">
+      <img class="chart1" src="../team dashbaord/image/ethan/ebarchart.png">
+    </div>
+    <div class="right">
+      <img class="chart2" src="../team dashbaord/image/ethan/epiechart.png">
+    </div>
+
+  </body>
+  <script src="./java/main.js"></script>
+</html>
